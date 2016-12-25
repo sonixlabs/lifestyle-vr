@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Miku View</title>
+    <meta name="description" content="120 View — A-Frame">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./libs/aframe.js"></script>
+    <script src="https://cdn.rawgit.com/kripken/ammo.js/dcab07bf0e7f2b4b64c01dc45da846344c8f50be/builds/ammo.js"></script>
+    <script src="./build/a-mmd.js"></script>
+
+  </head>
+  <body>
+    <a-scene antialias="true">
+      <a-assets>
+        <video id="camera" autoplay></video>
+      </a-assets>
+
+      <a-camera position="0 0 0" fov="120">
+      </a-camera>
+        <a-entity position="0 -2.3 -1.5" rotation="0 0 0" mmd="">
+          <a-entity rotation="0 0 0" position="0 -1.8 0" scale="0.3 0.3 0.3" mmd-model="model:./lat/miku.pmd;
+                 vmd:./mikuplus_m.vmd;" position="0 0 0"></a-entity>
+        </a-entity>
+    </a-scene>
+    <script type="text/javascript" src="./mmd.js"></script>
+  </body>
+</html>
